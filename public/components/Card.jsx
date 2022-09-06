@@ -37,14 +37,14 @@ document.body.style.backgroundImage = `url('../img/${props.bg}.jpg')`;
                 </div>
                 <div className='card-info_text'>
                     <p className='description'>{props.weaterDescription}</p>
-                    <p className='description_item'>Wind speed: <span>{props.winSpeed} m/s</span></p>
-                    <p className='description_item'>Cloud: <span>{props.cluds}%</span></p>
-                    <p className='description_item'>Pressure: <span>{props.pressure} mb</span> </p>
+                    <p className='description_item'><i class="fa-solid fa-wind"></i>Wind speed: <span>{props.winSpeed} m/s</span></p>
+                    <p className='description_item'><i class="fa-solid fa-cloud"></i>Cloud: <span>{props.cluds}%</span></p>
+                    <p className='description_item'><i class="fa-solid fa-earth-americas"></i>Pressure: <span>{props.pressure} mb</span> </p>
                 </div>
             </div>
             <div className='footer-card'>
-            <h3>{unit} {mesure}</h3>
-            <button onClick={mesures} >Degrees °C /°F</button>
+            <h3><i class="fa-solid fa-temperature-low"></i>{unit} {mesure}</h3>
+            <button onClick={mesures}>Degrees °C /°F</button>
             </div>
         </div>
     );
